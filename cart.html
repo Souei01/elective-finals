@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Elective/Assets/Styles/cart.css">
+</head>
+<body>
+    <header class="header">
+        <span class="logo"><a id="logo" href="index.html#home"> VANYARD</a><span class="dot">.</span></span>
+        <nav class="navbar">
+            <ul>
+                <li id="HOME"><a id="list" href="index.html#home">HOME</a></li>
+                <li id="ABOUT"><a id="list" href="index.html#about">ABOUT</a></li>
+                <li id="MENU"><a id="list" href="index.html#menu">MENU</a></li>
+                <li id="LOCATION"><a id="list" href="index.html#location">LOCATION</a></li>
+                <li id="PROMO"><a id="list" href="index.html#promo">PROMO</a></li>
+            </ul>
+        </nav>
+        <div class="icon">
+            <ion-icon class="icon-head" name="person-circle-outline"></ion-icon>
+            <a href="cart.html"><ion-icon class="icon-head" name="cart-outline"></ion-icon></a>
+        </div>
+    </header>
+    <div class="wrapper">
+        <span class="close-icon"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="call"></ion-icon></span>
+                    <input type="tel" required>
+                    <label>Contact Number</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="location"></ion-icon>></span>
+                    <input type="text" required>
+                    <label>Address</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Agree to terms & condition</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="filter">
+        <button class="filterButton" data-category="Show All">Show All</button>
+        <button class="filterButton" data-category="Burger">Burger</button>
+        <button class="filterButton" data-category="Short Orders">Short Orders</button>
+        <button class="filterButton" data-category="Meal">Meal</button>
+        <button class="filterButton" data-category="Drinks & beverages">Drinks & beverages</button>
+    </div>
+    <div class="container">
+        <header class="header1">
+            <h1 id="delicious">DELICIOUS<span id="food">FOOD</span></h1>
+            <div class="shopping">
+                <ion-icon name="cart-outline"></ion-icon>
+                <span class="quantity">0</span>
+            </div>
+        </header>
+        <div class="list"></div>
+    </div>
+    <div class="cart">
+        <h1 id="cart">Cart</h1>
+        <ul class="listCart"></ul>
+        <div class="checkOut">
+            <div class="checkout">checkout</div>
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+
+    </div>
+    <script src="../Elective/Assets/Scripts/index.js"></script>
+    <script src="../Elective/Assets/Scripts/indexx.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Elective/Assets/Styles/user.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <ion-icon name="fast-food-outline"></ion-icon>
+            <span>Vanyard</span>
+        </div>
+        <ion-icon name="menu-outline" id="btn"></ion-icon>
+    </div>
+    <div class="user">
+        <img src="../Elective/Assets/images/adminprofile.jpg" class="user-img">
+        <div class="admin-name">
+            <p class="bold">Marie</p>
+            <p>Admin</p> 
+        </div>
+    </div>
+    <ul>
+        <li>
+            <a href="admin.html">
+                <ion-icon name="grid-outline"></ion-icon>
+                <span class="nav-item">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="product.html">
+                <ion-icon name="bag-outline"></ion-icon>
+                <span class="nav-item">Products</span>
+            </a>
+            <span class="tooltip">Products</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="orders.html">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <span class="nav-item">Orders</span>
+            </a>
+            <span class="tooltip">orders</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="user.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <span class="nav-item">Users</span>
+            </a>
+            <span class="tooltip">Users</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="settings.html">
+                <ion-icon name="settings-outline"></ion-icon>
+                <span class="nav-item">Settings</span>
+            </a>
+            <span class="tooltip">Settings</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="index.html#home">
+                <ion-icon name="log-out-outline"></ion-icon>
+                <span class="nav-item">Logout</span>
+            </a>
+            <span class="tooltip">Logout</span>
+        </li>
+    </ul>
+</div>
+
+  <div class="user-management-container">
+    <div class="toolbar">
+      <!-- Toolbar content here like search, add user button -->
+    </div>
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Email</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#000001</td>
+         
+          <td>Ramos carl</td>
+          <td>Admin</td>
+          <td>ramos@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>        
+        <tr>
+          <td>#000002</td>
+          <td>Marie Abao</td>
+          <td>Admin</td>
+          <td>Abao@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#000003</td>
+          <td>ed lim</td>
+          <td>User</td>
+          <td>Lim@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#000004</td>
+          <td>regie nacion</td>
+          <td>User</td>
+          <td>nacion@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#000005</td>
+          <td>Jomark Abello</td>
+          <td>User</td>
+          <td>Abello@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#000006</td>
+          <td>Bah-jin emir</td>
+          <td>User</td>
+          <td>emir@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#000007</td>
+          <td>Kaito Nishitani</td>
+          <td>User</td>
+          <td>Nishitani@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#000008</td>
+          <td>Ruderick Abalos</td>
+          <td>User</td>
+          <td>Abalos@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#000003</td>
+          <td>ed lim</td>
+          <td>User</td>
+          <td>Lim@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>        <tr>
+          <td>#000003</td>
+          <td>ed lim</td>
+          <td>User</td>
+          <td>Lim@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>#000003</td>
+          <td>ed lim</td>
+          <td>User</td>
+          <td>Lim@gmail.com</td>
+          <td>Active</td>
+          <td>
+            <button class="btn-edit">Reset Password</button>
+            <button class="btn-delete">Delete</button>
+          </td>
+        </tr>
+        
+        <!-- More user rows... -->
+      </tbody>
+    </table>
+    <div class="pagination">
+      <!-- Pagination controls here -->
+    </div>
+  </div>
+  <script src="../Elective/Assets/Scripts/admin.js"></script>
+</body>
+</html>

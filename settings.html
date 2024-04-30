@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Elective/Assets/Styles/settings.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <ion-icon name="fast-food-outline"></ion-icon>
+            <span>Vanyard</span>
+        </div>
+        <ion-icon name="menu-outline" id="btn"></ion-icon>
+    </div>
+    <div class="user">
+        <img src="../Elective/Assets/images/adminprofile.jpg" class="user-img">
+        <div class="admin-name">
+            <p class="bold">Marie</p>
+            <p>Admin</p> 
+        </div>
+    </div>
+    <ul>
+        <li>
+            <a href="admin.html">
+                <ion-icon name="grid-outline"></ion-icon>
+                <span class="nav-item">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="product.html">
+                <ion-icon name="bag-outline"></ion-icon>
+                <span class="nav-item">Products</span>
+            </a>
+            <span class="tooltip">Products</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="orders.html">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <span class="nav-item">Orders</span>
+            </a>
+            <span class="tooltip">orders</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="user.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <span class="nav-item">Users</span>
+            </a>
+            <span class="tooltip">Users</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="settings.html">
+                <ion-icon name="settings-outline"></ion-icon>
+                <span class="nav-item">Settings</span>
+            </a>
+            <span class="tooltip">Settings</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="index.html#home">
+                <ion-icon name="log-out-outline"></ion-icon>
+                <span class="nav-item">Logout</span>
+            </a>
+            <span class="tooltip">Logout</span>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="section personal-info">
+        <h2>Personal Information</h2>
+        <p>Displayed here are the informations of the account. Only your address, email, and phone number can be changed.</p>
+        <div class="account-details">
+            <p>Account name: Marie Andre Abao</p>
+            <p>Address: XXXXXXX</p>
+            <p>Phone number: 09123123123</p>
+            <p>Email: MarieAbao@gmail.com</p>
+            <p>Team role: Head Admin</p>
+        </div>
+
+        <form>
+            <label for="address">Address</label>
+            <input type="text" id="address" value="">
+
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" value="">
+
+            <label for="fbUsername">Facebook username</label>
+            <input type="text" id="fbUsername" value="">
+
+            <label for="twitterUsername">Twitter username</label>
+            <input type="text" id="twitterUsername" value="">
+
+            <label for="avatar">Choose your avatar</label>
+            <div class="avatar-section">
+                <img id="avatarPreview" class="avatar">
+                <input type="file" id="uploadAvatar" accept="image/*">
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="save">Save Changes</button>
+                <button type="button" class="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="section account-security">
+        <h2>Account Security</h2>
+        <p>Update your password for a better and stronger account security.</p>
+
+        <form>
+            <label for="currentPassword">Enter your current password</label>
+            <input type="password" id="currentPassword">
+
+            <label for="newPassword">Enter your new password</label>
+            <input type="password" id="newPassword">
+
+            <label for="repeatNewPassword">Repeat your new password</label>
+            <input type="password" id="repeatNewPassword">
+
+            <div class="password-requirements">
+                <span>1 Upper-case letter</span>
+                <span>1 number</span>
+                <span>1 special character</span>
+            </div>
+            
+
+            <div class="buttons">
+                <button type="submit" class="save">Save Changes</button>
+                <button type="button" class="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+  <script src="../Elective/Assets/Scripts/admin.js"></script>
+  <script src="./Assets/Scripts/settings.js"></script>
+</body>
+</html>

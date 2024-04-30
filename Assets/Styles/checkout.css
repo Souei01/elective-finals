@@ -1,0 +1,89 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    font-family: 'Poppins', sans-serif;
+}
+
+.checkout-container {
+    position: relative;
+    width: 500px;
+    max-width: 600px;
+    /* max-height: 600px; */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 6px 10px rgba(0,0,0,0.3);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; 
+}
+
+.order-summary h3{
+    margin-bottom: 20px;
+}
+
+.summary-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    overflow-y: auto; /* Add scrollbar when content overflows */
+    max-height: calc(100% - 120px); /* Adjust max height to fit other elements */
+}
+
+.summary-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.btn-proceed {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-item-info {
+    display: flex;
+    align-items: center;
+}
+
+.summary-item-image {
+    width: 50px; /* Set the image size as needed */
+    height: 50px; /* Set the image size as needed */
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    margin-right: 10px;
+    border-radius: 50%; /* Optional: makes the image round */
+}
+
+.summary-item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Continue with the rest of your CSS... */
+

@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  
+}
+body{
+  background-color: rgb(244, 240, 240);
+}
+.user-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}.sidebar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  /* width: 250px; */
+  background-color: black;
+  padding: 0.4rem 0.8rem;
+  transition: all .5s ease ;
+  /* color: white; */
+  z-index: 20;
+}.sidebar.active ~ .main~content{
+  left: 250px;
+  width: calc(100% - 250px);
+}.sidebar.active{
+  width: 250px;
+  z-index: 100;
+}.sidebar #btn{
+  position: absolute;
+  top: .4rem;
+  left: 50%;
+  font-size: 1.2rem;
+  line-height: 50px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  color: white;
+}.sidebar.active #btn{
+  left: 90%;
+}.top span{
+  padding-left: 10px;
+  
+}.sidebar .top .logo{
+  color: white;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+}.sidebar.active .top .logo{
+  opacity: 1;
+}.top .logo{
+  font-size: 1.5rem;
+  margin-right: 5px;
+}.user p{
+  color: white;
+  opacity: 1;
+  margin-left: 1rem;
+  font-size: .8rem;
+}
+.user .bold{
+  font-weight: 500;
+  color: white;
+  font-size: 1.5rem;
+}.sidebar p{
+  opacity: 0;
+  color: white;
+}.sidebar.active p{
+  opacity: 1;
+}.sidebar ul li{
+  position: relative;
+  list-style-type: none;
+  height: 50px;
+  width: 90%;
+  margin: .8rem auto;
+  line-height: 50px;
+}.sidebar ul li a{
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: .8rem;
+}.sidebar ul li a:hover{
+  background-color: white;
+  color: black;
+}.sidebar ul li a ion-icon{
+  min-width: 50px;
+  text-align: center;
+  justify-content: center;
+  height: 23px;
+  border-radius: 12px;
+  line-height: 50px;
+}.sidebar .nav-item{
+  opacity: 0;
+}.sidebar.active .nav-item{
+  opacity: 1;
+}.sidebar ul li .tooltip{
+  position: absolute;
+  left: 125px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0,.2);
+  border-radius: .6rem;
+  padding: .4rem 1.2rem;
+  line-height: 1.8rem;
+  z-index: 20;
+  opacity: 0;
+}.sidebar ul li:hover .tooltip{
+  opacity: 1;
+}.sidebar.active ul li .tooltip{
+  display: none;
+}.user{
+  display: flex;
+  padding: 20px 0;
+}
+  
+
+
+
+
+
+
+  .user-management-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 20px;
+    min-width: 80%;
+    
+  }
+  
+  .toolbar {
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0px 2px black;
+  }
+  
+  .user-table thead {
+    background-color: orange;
+  }
+  
+  .user-table th,
+  .user-table td {
+    text-align: left;
+    padding: 12px 30px;
+    border-bottom: 1px solid #ddd;
+    font-size: .8rem;
+  }.user-table td{
+    background-color: rgb(244, 240, 240);
+  }
+  
+
+  .btn-edit,
+  .btn-delete {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .btn-edit {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn-delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .pagination {
+    /* Style your pagination controls here */
+  }
+  

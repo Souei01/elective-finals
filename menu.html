@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/Styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <span class="logo"><a id="logo" href="index.html#home"> VANYARD</a><span class="dot">.</span></span>
+        <nav class="navbar">
+            <ul>
+                <li id="HOME"><a id="list" href="index.html#home">HOME</a></li>
+                <li id="ABOUT"><a id="list" href="index.html#about">ABOUT</a></li>
+                <li id="MENU"><a id="list" href="menu.html#menu">MENU</a></li>
+                <li id="LOCATION"><a id="list" href="index.html#location">LOCATION</a></li>
+                <li id="PROMO"><a id="list" href="index.html#promo">PROMO</a></li>
+            </ul>
+        </nav>
+        <div class="icon">
+            <ion-icon class="icon-head" name="person-circle-outline"></ion-icon>
+            <a href="cart.html"><ion-icon class="icon-head" name="cart-outline"></ion-icon></a>
+        </div>
+    </header>
+    <div class="wrapper">
+        <span class="close-icon"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="call"></ion-icon></span>
+                    <input type="tel" required>
+                    <label>Contact Number</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="location"></ion-icon>></span>
+                    <input type="text" required>
+                    <label>Address</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Agree to terms & condition</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <img src="../Elective/Assets/images/MENU BG1.jpg" id="menubg">
+        <div id="menu1st">  
+                <img src="../Elective/Assets/images/1.jpg" alt="">
+                <img src="../Elective/Assets/images/2.jpg" alt="">
+        </div>
+        <div id="menu2nd">
+            <img src="../Elective/Assets/images/3.jpg" alt="">
+            <img src="../Elective/Assets/images/4.jpg" alt="">
+        </div>
+    </div>
+    <footer class="footer">
+        <div id="footer1">
+            <h1>VANYARD <span>.</span></h1>
+            <p id="footer-msg1">a culinary sensation emerged in the heart of Zamboanga City, Philippines, with the grand opening of Vanyard—a haven for flavor enthusiasts and food lovers alike.</p>
+            <div id="icon1">
+                <a href="https://www.facebook.com/VanyardCafe" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://www.instagram.com/vanyard.cafee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://x.com/vanyard_cafee?s=21&t=OKiioeJXgkyasmtXAHwNPg" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a> 
+            </div>
+        </div>
+
+    </footer>
+    <div id="copyright1">
+        <p>Copyright ©2024</p>
+    </div>
+    <script src="indexx.js"></script>
+</body>
+</html>

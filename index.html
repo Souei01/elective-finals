@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/Styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <span class="logo"><a id="logo" href="#home"> VANYARD</a><span class="dot">.</span></span>
+        <nav class="navbar">
+            <ul>
+                <li id="HOME"><a id="list" href="#home">HOME</a></li>
+                <li id="ABOUT"><a id="list" href="#about">ABOUT</a></li>
+                <li id="MENU"><a id="list" href="menu.html#menu">MENU</a></li>
+                <li id="LOCATION"><a id="list" href="#location">LOCATION</a></li>
+                <li id="PROMO"><a id="list" href="#promo">PROMO</a></li>
+            </ul>
+        </nav>
+        <div class="icon">
+            <ion-icon class="icon-head" name="person-circle-outline"></ion-icon>
+            <a href="cart.html"><ion-icon class="icon-head" name="cart-outline"></ion-icon></a>
+        </div>
+    </header>
+    <div class="wrapper">
+        <span class="close-icon"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="call"></ion-icon></span>
+                    <input type="tel" required>
+                    <label>Contact Number</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="location"></ion-icon>></span>
+                    <input type="text" required>
+                    <label>Address</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Agree to terms & condition</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="home">
+        
+        <div class="home-content">
+            <div class="offer">
+                <h1 id="sp-offer">Special Offer</h1>
+                <p id="home-text">Chicken Sisig. Made with tender grilled chicken infused with traditional Filipino spices, it's a flavor explosion! Sautéed with onions, garlic, and chili peppers, each bite offers a perfect balance of savory and spicy. Served sizzling hot, 
+                    it's a delightful dish that's perfect for sharing or savoring solo. Come taste the best of Filipino cuisine with our Chicken Sisig today!!</p>
+                <a href="cart.html"><button id="order-button" onclick="">ORDER NOW</button></a>
+            </div>
+            <div class="sisig"> 
+                <img src="./Assets/images\sisig-removebg-preview.png" >
+            </div>
+        </div>
+        <!-- <div class="home-content2">
+            <img id="slide 2" src="images\home2.jpg" alt="">
+        </div> -->
+    </div>
+    <div id="about">
+        
+        <img src="./Assets/images\vanyard2.jpg" alt="">
+        
+        <div class="box1">
+            <h1>VANYARD BEGINNING</h1>
+            <p>In January 2023, Vanyard, a renowned culinary establishment, opened its doors in Zamboanga City,
+                 Philippines, captivating locals with its commitment to exceptional dining experiences. Among its 
+                 diverse menu, the Chicken Inasal emerged as a standout favorite, showcasing Vanyard's dedication 
+                 to authentic flavors and culinary excellence. Grilled to perfection over an open flame, each succulent
+                  skewer of marinated chicken, served with fragrant rice and traditional dipping sauces, captivated diners'
+                   palates and became the restaurant's signature dish. As word of Vanyard's culinary prowess spread,
+                    it quickly became a beloved fixture in Zamboanga's vibrant food scene, attracting enthusiasts from
+                     across the region to savor its unforgettable flavors.
+            </p>
+        </div>
+    </div>
+    <div class="about-extend">
+        <div class="b1">
+            <h1>OUR RESTAURANT</h1>
+            <p>Embark on a sensory journey through the lively vanyards, where every step offers a glimpse into the heart and soul of Filipino culture. 
+                Amidst the bustling atmosphere, you'll encounter a myriad of sights, sounds, and flavors that ignite the senses. From sizzling street 
+                food stalls serving up local delicacies to vibrant shops showcasing colorful goods, the vanyards are a treasure trove of experiences 
+                waiting to be discovered. Lose yourself in the vibrant energy and rich tapestry of this dynamic community, where every corner tells a 
+                story and every moment is a celebration of life.</p>
+
+        </div>
+        <div class="b2">
+        <img src="./Assets/images\vanyard3.jpg" alt="">
+        </div>
+    </div>
+<div id="promo">
+    <img id="promo-image" src="./Assets/images\PROMO2.jpg" alt="">
+</div>
+    <div id="location">
+        <img src="./Assets/images\location5.jpg" alt="">
+            <div class="box-location">
+                <div class="location-content">
+                <div class="guiwan-loc">
+                    <h1>VANYARD CAFE GUIWAN</h1>
+                    <p>Sampaguita rd, Guiwan Porcentro, Zamboanga, Zamboanga del sur</p>
+                </div>
+                <div class="opening">
+                    <div id="store">
+                        <h1>STORE HOURS</h1>
+                    </div>
+                    <div id="sched">
+                        <div id="sched-content">
+                            <p>Mon-Sat</p>
+                            <p>10am-10pm</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lunzuran-loc">
+                    <h1>VANYARD CAFE LUNZURAN</h1>
+                    <p>Tumaga-Lunzuran rd, Zamboanga, Zamboanga del Sur</p>
+                </div>
+                </div>
+
+            </div>
+    </div>
+        <footer>
+            <div id="footer">
+                <h1>VANYARD <span>.</span></h1>
+                <p id="footer-msg">a culinary sensation emerged in the heart of Zamboanga City, Philippines, with the grand opening of Vanyard—a haven for flavor enthusiasts and food lovers alike.</p>
+                <div id="icon">
+                    <a href="https://www.facebook.com/VanyardCafe" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/vanyard.cafee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://x.com/vanyard_cafee?s=21&t=OKiioeJXgkyasmtXAHwNPg" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                </div>
+            </div>
+    
+        </footer>
+        <div id="copyright">
+            <p>Copyright ©2024</p>
+        </div>
+        <script src="./Assets/Scripts/indexx.js"></script>
+</body>
+</html>

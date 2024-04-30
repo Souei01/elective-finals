@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Elective/Assets/Styles/orders.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <ion-icon name="fast-food-outline"></ion-icon>
+            <span>Vanyard</span>
+        </div>
+        <ion-icon name="menu-outline" id="btn"></ion-icon>
+    </div>
+    <div class="user">
+        <img src="../Elective/Assets/images/adminprofile.jpg" class="user-img">
+        <div class="admin-name">
+            <p class="bold">Marie</p>
+            <p>Admin</p> 
+        </div>
+    </div>
+    <ul>
+        <li>
+            <a href="admin.html">
+                <ion-icon name="grid-outline"></ion-icon>
+                <span class="nav-item">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="product.html">
+                <ion-icon name="bag-outline"></ion-icon>
+                <span class="nav-item">Products</span>
+            </a>
+            <span class="tooltip">Products</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="orders.html">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <span class="nav-item">Orders</span>
+            </a>
+            <span class="tooltip">orders</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="user.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <span class="nav-item">Users</span>
+            </a>
+            <span class="tooltip">Users</span>
+        </li>
+    </ul>
+    <ul>
+    <ul>
+        <li>
+            <a href="settings.html">
+                <ion-icon name="settings-outline"></ion-icon>
+                <span class="nav-item">Settings</span>
+            </a>
+            <span class="tooltip">Settings</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="index.html#home">
+                <ion-icon name="log-out-outline"></ion-icon>
+                <span class="nav-item">Logout</span>
+            </a>
+            <span class="tooltip">Logout</span>
+        </li>
+    </ul>
+</div>
+
+  <div class="user-management-container">
+    <div class="toolbar">
+      <!-- Toolbar content here like search, add user button -->
+    </div>
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Customer ID</th>
+          <th>Customer Name</th>
+          <th>Product ID</th>
+          <th>Product</th>
+          <th>Total</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>Ramos carl</td>
+          <td>1</td>
+          <td>Chicken burger</td>
+          <td>89</td>
+          <td><span>Delivered</span></td>
+          <td>
+            <button class="btn-Drop">Drop</button>
+          </td>
+        </tr>        
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>Marie Andre Abao</td>
+            <td>2</td>
+            <td>(Chicken burger = 2), (Chicken Sisig),(Fruit Soda = 5), (Chicken Inasal),(Halo Halo), (Fried Chicken)</td>
+            <td>872</td>
+            <td><span>Delivered</span></td>
+            <td>
+              <button class="btn-Drop">Drop</button>
+            </td>
+          </tr>   
+          <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>Ed Lim</td>
+            <td>3</td>
+            <td>(Chicken Sisig = 2)</td>
+            <td>320</td>
+            <td><span>Delivered</span></td>
+            <td>
+              <button class="btn-Drop">Drop</button>
+            </td>
+          </tr>   
+          <tr>
+            <td>4</td>
+            <td>4</td>
+            <td>Moy Bah-jin</td>
+            <td>4</td>
+            <td>Beef burger</td>
+            <td>99</td>
+            <td><span>Delivered</span></td>
+            <td>
+              <button class="btn-Drop">Drop</button>
+            </td>
+          </tr>   
+          <tr>
+            <td>5</td>
+            <td>5</td>
+            <td>Abello Jomark</td>
+            <td>5</td>
+            <td>Pancit Miki</td>
+            <td>170</td>
+            <td><span>Delivered</span></td>
+            <td>
+              <button class="btn-Drop">Drop</button>
+            </td>
+          </tr>   
+          <tr>
+            <td>6</td>
+            <td>6</td>
+            <td>Kaito Nishitani</td>
+            <td>6</td>
+            <td>Chicken burger</td>
+            <td>89</td>
+            <td><span>Delivered</span></td>
+            <td>
+              <button class="btn-Drop">Drop</button>
+            </td>
+          </tr>   
+        <tr>
+            <td>7</td>
+            <td>7</td>
+            <td>Abalos Ruderick Jr.</td>
+            <td>7</td>
+            <td>(Halo Halo = 3)</td>
+            <td>297</td>
+            <td><span>Delivered</span></td>
+            <td>
+              <button class="btn-Drop">Drop</button>
+            </td>
+          </tr>   
+          <tr>
+            <td>8</td>
+            <td>8</td>
+            <td>Al- Steven Tumimbs</td>
+            <td>8</td>
+            <td>(Chicken Inasal Petcho = 5)</td>
+            <td>600</td>
+            <td><span>Delivered</span></td>
+            <td>
+              <button class="btn-Drop">Drop</button>
+            </td>
+          </tr>   
+          <tr>
+            <td>9</td>
+            <td>9</td>
+            <td>Mosses Andre</td>
+            <td>9</td>
+            <td>(Chicken Inasal Petcho = 2),(Chicken Burger)</td>
+            <td>329</td>
+            <td><span>Delivered</span></td>
+            <td>
+              <button class="btn-Drop">Drop</button>
+            </td>
+          </tr>   
+          <tr>
+            <td>10</td>
+            <td>10</td>
+            <td>Botchok Abao</td>
+            <td>10</td>
+            <td>(pancit miki)</td>
+            <td>170</td>
+            <td><span>Delivered</span></td>
+            <td>
+              <button class="btn-Drop">Drop</button>
+            </td>
+          </tr>   
+          <tr>
+            <td>11</td>
+            <td>11</td>
+            <td>Sardines Miao</td>
+            <td>11</td>
+            <td>(Fried Chicken)</td>
+            <td>110</td>
+            <td><span>Delivered</span></td>
+            <td>
+              <button class="btn-Drop">Drop</button>
+            </td>
+          </tr>   
+        
+        <!-- More user rows... -->
+      </tbody>
+    </table>
+    <div class="pagination">
+      <!-- Pagination controls here -->
+    </div>
+  </div>
+  <script src="../Elective/Assets/Scripts/admin.js"></script>
+</body>
+</html>
